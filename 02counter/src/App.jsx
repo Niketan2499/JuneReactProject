@@ -15,7 +15,14 @@ function App() {
   const addValue = ()=>{
     // counter=counter+1;
     if(counter<20)
-    setcounter(counter+1);
+      setcounter((prevcounter)=>{return prevcounter+1})
+      setcounter((prevcounter)=>{return prevcounter+1})
+      setcounter((prevcounter)=>{return prevcounter+1})
+    // setcounter(counter+1);
+    // setcounter(counter+1);
+    // setcounter(counter+1);
+    // setcounter(counter+1);
+    // setcounter(counter+1); 
     console.log("valueAdded",counter);
   }
   return (
